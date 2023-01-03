@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="11" failures="4" errors="0" time="3.86">
+  <testsuite name="src/test/AddMovieForm.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-01-03T02:03:33" time="2.469" tests="2">
+    <testcase classname="AddMovieForm Component" name="calls onSubmitSpy handler for submit button" time="0.057">
+    </testcase>
+    <testcase classname="AddMovieForm Component" name="calls onCancelSpy handler for cancel button" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/test/MovieCard.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-01-03T02:03:33" time="2.48" tests="3">
+    <testcase classname="MovieCard Component" name="displays correct movie data" time="0.053">
+    </testcase>
+    <testcase classname="MovieCard Component" name="displays correct movie rating" time="0.012">
+    </testcase>
+    <testcase classname="MovieCard Component" name="displays correct movie rating stars width" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/test/MovieList.test.tsx" errors="0" failures="1" skipped="0" timestamp="2023-01-03T02:03:33" time="2.506" tests="1">
+    <testcase classname="MovieList Component" name="should not display a movie after it gets deleted" time="0.083">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;movie-item-fakeid-fight-club&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;nav
+        class=&quot;header navbar navbar-dark bg-dark&quot;
+      &gt;
+        &lt;div
+          class=&quot;container&quot;
+        &gt;
+          &lt;div
+            class=&quot;row m-auto&quot;
+          &gt;
+            &lt;i
+              class=&quot;fa fa-film fa-2x text-white my-auto&quot;
+            /&gt;
+            &lt;div
+              class=&quot;h3 ml-3 my-auto text-light&quot;
+            &gt;
+              React Movie Management Application
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+      &lt;div
+        class=&quot;mt-5&quot;
+      &gt;
+        &lt;div
+          class=&quot;container-fluid&quot;
+        &gt;
+          &lt;div
+            class=&quot;d-flex flex-row&quot;
+          &gt;
+            &lt;div
+              class=&quot;col-sm-12&quot;
+            &gt;
+              &lt;div
+                class=&quot;card-deck&quot;
+              &gt;
+                &lt;div
+                  class=&quot;movie-card&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;movie-card card&quot;
+                  &gt;
+                    &lt;div
+                      data-testid=&quot;movie-item&quot;
+                    &gt;
+                      &lt;img
+                        alt=&quot;&quot;
+                        class=&quot;card-img-top&quot;
+                        src=&quot;sample.jpg&quot;
+                      /&gt;
+                      &lt;div
+                        class=&quot;card-body&quot;
+                      &gt;
+                        &lt;h4
+                          class=&quot;card-title&quot;
+                        &gt;
+                          Fight Club
+                        &lt;/h4&gt;
+                        Mischief. Mayhem. Soap.
+                        &lt;h6
+                          class=&quot;card-subtitle mb-2 text-muted&quot;
+                        /&gt;
+                        &lt;p
+                          class=&quot;text-justify&quot;
+                          style=&quot;font-size: 14px;&quot;
+                        &gt;
+                          An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.
+                        &lt;/p&gt;
+                        &lt;button
+                          class=&quot;mx-1 btn btn-primary&quot;
+                          type=&quot;button&quot;
+                        &gt;
+                          Delete
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;div
+                        class=&quot;card-footer&quot;
+                      &gt;
+                        &lt;div
+                          class=&quot;clearfix&quot;
+                        &gt;
+                          &lt;div
+                            class=&quot;float-left mt-1&quot;
+                          &gt;
+                            &lt;div&gt;
+                              &lt;div
+                                style=&quot;overflow: hidden;&quot;
+                              &gt;
+                                &lt;div
+                                  id=&quot;rate-container&quot;
+                                  style=&quot;width: 102px;&quot;
+                                &gt;
+                                  &lt;div
+                                    style=&quot;position: absolute; width: 110px;&quot;
+                                  &gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                  &lt;/div&gt;
+                                  &lt;div
+                                    style=&quot;width: 110px;&quot;
+                                  &gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star ...
+    at Object.getElementError (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at PageObject.getMovieCard (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/MoviesPageObject.ts:49:23)
+    at PageObject.clickDeleteMovieButton (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/MoviesPageObject.ts:63:42)
+    at Object.&lt;anonymous&gt; (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/MovieList.test.tsx:19:26)
+    at _callCircusTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:212:5)
+    at _runTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:63:9)
+    at _runTestsForDescribeBlock (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:57:9)
+    at run (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="src/test/App.test.tsx" errors="0" failures="3" skipped="0" timestamp="2023-01-03T02:03:33" time="2.628" tests="5">
+    <testcase classname="App Component" name="should display header" time="0.073">
+    </testcase>
+    <testcase classname="App Component" name="should fetch movies using the service" time="0.028">
+    </testcase>
+    <testcase classname="App Component" name="should display current movie rating" time="0.033">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;movie-item-fakeid-fight-club&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;nav
+        class=&quot;header navbar navbar-dark bg-dark&quot;
+      &gt;
+        &lt;div
+          class=&quot;container&quot;
+        &gt;
+          &lt;div
+            class=&quot;row m-auto&quot;
+          &gt;
+            &lt;i
+              class=&quot;fa fa-film fa-2x text-white my-auto&quot;
+            /&gt;
+            &lt;div
+              class=&quot;h3 ml-3 my-auto text-light&quot;
+            &gt;
+              React Movie Management Application
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+      &lt;div
+        class=&quot;mt-5&quot;
+      &gt;
+        &lt;div
+          class=&quot;container-fluid&quot;
+        &gt;
+          &lt;div
+            class=&quot;d-flex flex-row&quot;
+          &gt;
+            &lt;div
+              class=&quot;col-sm-12&quot;
+            &gt;
+              &lt;div
+                class=&quot;card-deck&quot;
+              &gt;
+                &lt;div
+                  class=&quot;movie-card&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;movie-card card&quot;
+                  &gt;
+                    &lt;div
+                      data-testid=&quot;movie-item&quot;
+                    &gt;
+                      &lt;img
+                        alt=&quot;&quot;
+                        class=&quot;card-img-top&quot;
+                        src=&quot;sample.jpg&quot;
+                      /&gt;
+                      &lt;div
+                        class=&quot;card-body&quot;
+                      &gt;
+                        &lt;h4
+                          class=&quot;card-title&quot;
+                        &gt;
+                          Fight Club
+                        &lt;/h4&gt;
+                        Mischief. Mayhem. Soap.
+                        &lt;h6
+                          class=&quot;card-subtitle mb-2 text-muted&quot;
+                        /&gt;
+                        &lt;p
+                          class=&quot;text-justify&quot;
+                          style=&quot;font-size: 14px;&quot;
+                        &gt;
+                          An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.
+                        &lt;/p&gt;
+                        &lt;button
+                          class=&quot;mx-1 btn btn-primary&quot;
+                          type=&quot;button&quot;
+                        &gt;
+                          Delete
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;div
+                        class=&quot;card-footer&quot;
+                      &gt;
+                        &lt;div
+                          class=&quot;clearfix&quot;
+                        &gt;
+                          &lt;div
+                            class=&quot;float-left mt-1&quot;
+                          &gt;
+                            &lt;div&gt;
+                              &lt;div
+                                style=&quot;overflow: hidden;&quot;
+                              &gt;
+                                &lt;div
+                                  id=&quot;rate-container&quot;
+                                  style=&quot;width: 102px;&quot;
+                                &gt;
+                                  &lt;div
+                                    style=&quot;position: absolute; width: 110px;&quot;
+                                  &gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                  &lt;/div&gt;
+                                  &lt;div
+                                    style=&quot;width: 110px;&quot;
+                                  &gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star ...
+    at Object.getElementError (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at PageObject.getMovieCard (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/MoviesPageObject.ts:49:23)
+    at PageObject.expectMovieRating (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/MoviesPageObject.ts:58:48)
+    at Object.&lt;anonymous&gt; (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/App.test.tsx:40:26)
+    at _callCircusTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:212:5)
+    at _runTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:63:9)
+    at _runTestsForDescribeBlock (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:57:9)
+    at run (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="App Component" name="should update the rating after star icon was clicked" time="0.028">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;movie-item-fakeid-fight-club&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;nav
+        class=&quot;header navbar navbar-dark bg-dark&quot;
+      &gt;
+        &lt;div
+          class=&quot;container&quot;
+        &gt;
+          &lt;div
+            class=&quot;row m-auto&quot;
+          &gt;
+            &lt;i
+              class=&quot;fa fa-film fa-2x text-white my-auto&quot;
+            /&gt;
+            &lt;div
+              class=&quot;h3 ml-3 my-auto text-light&quot;
+            &gt;
+              React Movie Management Application
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+      &lt;div
+        class=&quot;mt-5&quot;
+      &gt;
+        &lt;div
+          class=&quot;container-fluid&quot;
+        &gt;
+          &lt;div
+            class=&quot;d-flex flex-row&quot;
+          &gt;
+            &lt;div
+              class=&quot;col-sm-12&quot;
+            &gt;
+              &lt;div
+                class=&quot;card-deck&quot;
+              &gt;
+                &lt;div
+                  class=&quot;movie-card&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;movie-card card&quot;
+                  &gt;
+                    &lt;div
+                      data-testid=&quot;movie-item&quot;
+                    &gt;
+                      &lt;img
+                        alt=&quot;&quot;
+                        class=&quot;card-img-top&quot;
+                        src=&quot;sample.jpg&quot;
+                      /&gt;
+                      &lt;div
+                        class=&quot;card-body&quot;
+                      &gt;
+                        &lt;h4
+                          class=&quot;card-title&quot;
+                        &gt;
+                          Fight Club
+                        &lt;/h4&gt;
+                        Mischief. Mayhem. Soap.
+                        &lt;h6
+                          class=&quot;card-subtitle mb-2 text-muted&quot;
+                        /&gt;
+                        &lt;p
+                          class=&quot;text-justify&quot;
+                          style=&quot;font-size: 14px;&quot;
+                        &gt;
+                          An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.
+                        &lt;/p&gt;
+                        &lt;button
+                          class=&quot;mx-1 btn btn-primary&quot;
+                          type=&quot;button&quot;
+                        &gt;
+                          Delete
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;div
+                        class=&quot;card-footer&quot;
+                      &gt;
+                        &lt;div
+                          class=&quot;clearfix&quot;
+                        &gt;
+                          &lt;div
+                            class=&quot;float-left mt-1&quot;
+                          &gt;
+                            &lt;div&gt;
+                              &lt;div
+                                style=&quot;overflow: hidden;&quot;
+                              &gt;
+                                &lt;div
+                                  id=&quot;rate-container&quot;
+                                  style=&quot;width: 102px;&quot;
+                                &gt;
+                                  &lt;div
+                                    style=&quot;position: absolute; width: 110px;&quot;
+                                  &gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                  &lt;/div&gt;
+                                  &lt;div
+                                    style=&quot;width: 110px;&quot;
+                                  &gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star ...
+    at Object.getElementError (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at PageObject.getMovieCard (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/MoviesPageObject.ts:49:23)
+    at PageObject.rateMovie (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/MoviesPageObject.ts:53:43)
+    at Object.&lt;anonymous&gt; (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/App.test.tsx:50:26)
+    at _callCircusTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:212:5)
+    at _runTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:63:9)
+    at _runTestsForDescribeBlock (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:57:9)
+    at run (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="App Component" name="should add a new movie after form was filled and submitted" time="0.03">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: /Add Movie/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;nav
+        class=&quot;header navbar navbar-dark bg-dark&quot;
+      &gt;
+        &lt;div
+          class=&quot;container&quot;
+        &gt;
+          &lt;div
+            class=&quot;row m-auto&quot;
+          &gt;
+            &lt;i
+              class=&quot;fa fa-film fa-2x text-white my-auto&quot;
+            /&gt;
+            &lt;div
+              class=&quot;h3 ml-3 my-auto text-light&quot;
+            &gt;
+              React Movie Management Application
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+      &lt;div
+        class=&quot;mt-5&quot;
+      &gt;
+        &lt;div
+          class=&quot;container-fluid&quot;
+        &gt;
+          &lt;div
+            class=&quot;d-flex flex-row&quot;
+          &gt;
+            &lt;div
+              class=&quot;col-sm-12&quot;
+            &gt;
+              &lt;div
+                class=&quot;card-deck&quot;
+              &gt;
+                &lt;div
+                  class=&quot;movie-card&quot;
+                &gt;
+                  &lt;div
+                    class=&quot;movie-card card&quot;
+                  &gt;
+                    &lt;div
+                      data-testid=&quot;movie-item&quot;
+                    &gt;
+                      &lt;img
+                        alt=&quot;&quot;
+                        class=&quot;card-img-top&quot;
+                        src=&quot;sample.jpg&quot;
+                      /&gt;
+                      &lt;div
+                        class=&quot;card-body&quot;
+                      &gt;
+                        &lt;h4
+                          class=&quot;card-title&quot;
+                        &gt;
+                          Fight Club
+                        &lt;/h4&gt;
+                        Mischief. Mayhem. Soap.
+                        &lt;h6
+                          class=&quot;card-subtitle mb-2 text-muted&quot;
+                        /&gt;
+                        &lt;p
+                          class=&quot;text-justify&quot;
+                          style=&quot;font-size: 14px;&quot;
+                        &gt;
+                          An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.
+                        &lt;/p&gt;
+                        &lt;button
+                          class=&quot;mx-1 btn btn-primary&quot;
+                          type=&quot;button&quot;
+                        &gt;
+                          Delete
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;div
+                        class=&quot;card-footer&quot;
+                      &gt;
+                        &lt;div
+                          class=&quot;clearfix&quot;
+                        &gt;
+                          &lt;div
+                            class=&quot;float-left mt-1&quot;
+                          &gt;
+                            &lt;div&gt;
+                              &lt;div
+                                style=&quot;overflow: hidden;&quot;
+                              &gt;
+                                &lt;div
+                                  id=&quot;rate-container&quot;
+                                  style=&quot;width: 102px;&quot;
+                                &gt;
+                                  &lt;div
+                                    style=&quot;position: absolute; width: 110px;&quot;
+                                  &gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star-o fa-lg&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                  &lt;/div&gt;
+                                  &lt;div
+                                    style=&quot;width: 110px;&quot;
+                                  &gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star fa-lg&quot;
+                                      data-testid=&quot;star-item&quot;
+                                      style=&quot;padding: 1px;&quot;
+                                    /&gt;
+                                    &lt;i
+                                      class=&quot;fa fa-star ...
+    at Object.getElementError (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByText (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at PageObject.clickAddMovieButton (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/MoviesPageObject.ts:12:36)
+    at Object.&lt;anonymous&gt; (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/src/test/App.test.tsx:66:26)
+    at _callCircusTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:212:5)
+    at _runTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:63:9)
+    at _runTestsForDescribeBlock (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:57:9)
+    at run (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/henriqueholzdecastro/Documents/clever/c8db0b9d-9c50-4cb6-8e94-9bd060851e2e/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
