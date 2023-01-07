@@ -16,7 +16,7 @@ export function Button({ onClick = () => {}, children, className,  style="primar
   const classNames = `mx-1 btn btn-${style}` + (className ? (" " + className) : '');
 
   return (
-    <button type="button" className={classNames} onClick={onClickHandler}>
+    <button type="button" className={classNames} onClick={onClickHandler} data-testid={`button-${children.toLowerCase()}`}>
       {children}
     </button>
   );

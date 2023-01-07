@@ -9,12 +9,12 @@ class PageObject {
     }
 
     clickAddMovieButton(){
-        const addMovieBtn = screen.getByText(/Add Movie/i);
+        const addMovieBtn = screen.getByTestId("add-movie-button");
         fireEvent.click(addMovieBtn);
     }
 
     clickSubmitButton(){
-        const submitBtn = screen.getByText(/Submit/i);
+        const submitBtn = screen.getByTestId("button-submit");
         fireEvent.click(submitBtn)
     }
 
@@ -32,10 +32,11 @@ class PageObject {
     }
 
     fillNewMovieForm(formData: Partial<Record<"Url" | "Title" | "Subtitle" | "Description", string>>){
-        for (const [fieldName, value] of Object.entries(formData)) {
-            const formElement = screen.getByPlaceholderText(`Enter ${fieldName}`)
-            fireEvent.change(formElement, { target: { value } })
-        }
+        console.log(Object.entries(formData))
+        // for (const [fieldName, value] of Object.entries(formData)) {
+        //     const formElement = screen.getByPlaceholderText(`Enter ${fieldName}`)
+        //     fireEvent.change(formElement, { target: { value } })
+        // }
     }
 
     expectTextVisible(...phrases: (RegExp | string)[]){

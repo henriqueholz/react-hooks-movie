@@ -8,25 +8,34 @@ interface AddMovieFormProps {
 }
 
 export function AddMovieForm({ onSubmit, onCancel }: AddMovieFormProps) {
-  const [url, setUrl] = useState("")
+  const [imageUrl, setImageUrl] = useState("")
   const [title, setTitle] = useState("") 
   const [subtitle, setSubtitle] = useState("")
   const [description, setDescription] = useState("")
 
+  function resetForm() {
+    setImageUrl("")
+    setTitle("") 
+    setSubtitle("")
+    setDescription("")
+  }
+
   return (
     <form className="p-4 ">
-      <InputField name="Url" setter={setUrl}/>
-      <InputField name="Title" setter={setTitle}/>
-      <InputField name="Subtitle" setter={setSubtitle}/>
-      <InputField name="Description" setter={setDescription}/>
+      <InputField name="Url" value={imageUrl} setter={setImageUrl}/>
+      <InputField name="Title" value={title} setter={setTitle}/>
+      <InputField name="Subtitle" value={subtitle} setter={setSubtitle}/>
+      <InputField name="Description" value={description}  setter={setDescription}/>
       <div className="text-center">
-      <Button onClick={() => {
+      <Button data-testid="submit-button" onClick={() => {
         onSubmit({
-          imageUrl: url,
+          imageUrl,
           title,
           subtitle,
           description
-        })}}
+        })
+        resetForm()
+      }}
       >
         Submit
       </Button>

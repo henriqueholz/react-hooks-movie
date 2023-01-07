@@ -38,17 +38,19 @@ export const MovieList = () => {
           <MovieCard key={movie.id} movie={movie} />
         </Card>      
       ))}
-      <Card>
-        { displayOptionType === 'button' ? 
-        <AddMovieButton onClick={() => {
-          changeNewMovieMode()
-        } }/> 
-        : 
-        <AddMovieForm 
-          onSubmit={(data) => { addNewMovie(data) }} 
-          onCancel={() => changeNewMovieMode()} 
-        />}
+      <div data-testid={`add-movie-${displayOptionType}`}>
+        <Card >
+          { displayOptionType === 'button' ? 
+          <AddMovieButton onClick={() => {
+            changeNewMovieMode()
+          } }/> 
+          : 
+          <AddMovieForm 
+            onSubmit={(data) => { addNewMovie(data) }} 
+            onCancel={() => changeNewMovieMode()} 
+          />}
       </Card>
+      </div>
     </div>
   );
 }

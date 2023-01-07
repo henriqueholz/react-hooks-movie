@@ -10,7 +10,6 @@ interface MoviesState {
 }
 
 export function useMoviesCollection(): [MoviesState, React.Dispatch<MoviesAction>] {
-  // TODO: Implement all action processing
 
   const movieReducer = (state: MoviesState, action: MoviesAction): MoviesState => {
     switch (action.type) {

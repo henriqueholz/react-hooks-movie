@@ -12,7 +12,7 @@ describe('AddMovieForm Component', () => {
 
         // when
         MoviesPageObject.fillNewMovieForm({
-            Url: "some url",
+            Url: "some url test",
             Title: "The Green mile",
             Subtitle: "Walk a mile you'll never forget.",
             Description: "Death Row guards at a penitentiary, in the 1930's, have a moral dilemma with their job when they discover one of their prisoners, a convicted murderer, has a special gift.",
@@ -32,7 +32,7 @@ describe('AddMovieForm Component', () => {
 
         // when
         MoviesPageObject.fillNewMovieForm({
-            Url: "some url",
+            Url: "some url 2",
             Title: "The Green mile",
             Subtitle: "Walk a mile you'll never forget.",
             Description: "Death Row guards at a penitentiary, in the 1930's, have a moral dilemma with their job when they discover one of their prisoners, a convicted murderer, has a special gift.",

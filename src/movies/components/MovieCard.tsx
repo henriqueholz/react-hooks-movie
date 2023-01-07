@@ -11,7 +11,6 @@ interface MovieCardProps {
 export const MovieCard = ({ movie }: MovieCardProps) => {
     const { moviesDispatch } = useMovies()
     
-    // TODO: implement required functionality
     function deleteAction(movie: Movie) {
         let movieDeleteAction: MovieDeleteAction = {
             type: 'delete',
@@ -23,7 +22,7 @@ export const MovieCard = ({ movie }: MovieCardProps) => {
     }
 
     return (
-        <div data-testid="movie-item">
+        <div data-testid={`movie-item-${movie.id}`}>
             <img src={ movie.imageUrl} className="card-img-top" alt="" />
             <div className="card-body">
                 <h4 className="card-title">
@@ -36,7 +35,7 @@ export const MovieCard = ({ movie }: MovieCardProps) => {
                 </p>
                 <Button onClick={() => deleteAction(movie)}>Delete</Button>
             </div>
-            <div className="card-footer">
+            <div className="card-footer" data-testid="movie-rating">
                 <div className="clearfix">
                 <div className="float-left mt-1">
                     { StarRating(
